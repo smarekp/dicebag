@@ -1,0 +1,22 @@
+{
+  "name": "dicebag",
+  "version": "1.0.0",
+  "description": "A Discord bot using a reactions-based menu system for point-and-click dice rolling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarekp/dicebag.git"
+  },
+  "author": "Marek Philibert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smarekp/dicebag/issues"
+  },
+  "homepage": "https://github.com/smarekp/dicebag#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
