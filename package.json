@@ -2,7 +2,7 @@
   "name": "dicebag",
   "version": "1.0.0",
   "description": "A Discord bot using a reactions-based menu system for point-and-click dice rolling.",
-  "main": "index.js",
+  "main": "login.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smarekp/dicebag#readme",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "node-dice-js": "^0.1.2"
   }
 }
