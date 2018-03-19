@@ -11,11 +11,11 @@ module.exports = {
 		const result = dice.execute(args[0]);
 		const outcome = result.outcomes[0];
 
-		let reply = `${message.author} rolled *${result.command}* totaling **${outcome.total}**.`;
+		let reply = `${message.author} rolled ${result.command} totaling **${outcome.total}**.`;
 
 		if(outcome.rolls.length > 1) {
 			const rolls = outcome.rolls.join(', ');
-			reply += `  (${result.command})`;
+			reply += `  (${rolls})`;
 		}
 
 		message.channel.send(reply).catch(console.error);
