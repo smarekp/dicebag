@@ -65,4 +65,4 @@ sudo chmod 755 /etc/init.d/dicebag-login
 
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
-[3]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md
+[3]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
