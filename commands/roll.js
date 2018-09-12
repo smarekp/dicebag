@@ -1,22 +1,26 @@
-const Dice = require('node-dice-js');
+const DiceRoller = require('../node_modules/rpg-dice-roller/dice-roller.js');
 
 module.exports = {
 	name: 'roll',
 	aliases: ['r'],
-	description: 'Executes a command given in dice notation, and returns the results. See https://en.wikipedia.org/wiki/Dice_notation for more information about dice notation.',
+	description: 'Executes a command given in dice notation, and returns the results. See https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md for more information about dice notation.',
 	usage: '<dice notation>',
 	args: true,
 	execute(message, args) {
-		const dice = new Dice();
-		const result = dice.execute(args[0]);
-		const outcome = result.outcomes[0];
+		
+		// create a new instance of the DiceRoller
+		const dice = new DiceRoller.DiceRoller();
 
-		let reply = `${message.author} rolled ${result.command} totaling **${outcome.total}**.`;
+		// roll the dice
+		dice.roll(args[0]);
 
-		if(outcome.rolls.length > 1) {
-			const rolls = outcome.rolls.join(', ');
-			reply += `  (${rolls})`;
-		}
+		// get the latest dice rolls from the log
+		let result = dice.log.shift();
+
+		let reply = `${message.author} rolled ${result.toString()}`;
+
+		// output the latest roll - it has a toString method for nice output
+		console.log(result);
 
 		message.channel.send(reply).catch(console.error);
 	},

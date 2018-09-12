@@ -14,9 +14,9 @@ for (const file of commandFiles) {
 
 const cooldowns = new Discord.Collection();
 
-client.on('ready', () => {
-	console.log('Ready!');
-});
+client.on('ready', () => { console.log('Ready!'); });
+
+client.on('error', console.error);
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;

@@ -1,7 +1,7 @@
 const Dice = require('node-dice-js');
 
 module.exports = {
-	name: 'roll-verbose',
+	name: 'roll-old-verbose',
 	description: 'Executes a command given in dice notation, and returns the results as a JSON string. See https://en.wikipedia.org/wiki/Dice_notation for more information about dice notation.',
 	usage: '<dice notation>',
 	cooldown: 5,

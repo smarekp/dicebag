@@ -1,2 +1,3 @@
 # dicebag
-A Discord bot using a reactions-based menu system for point-and-click dice rolling.
+
+A Discord bot for rolling dice using dice notation.
