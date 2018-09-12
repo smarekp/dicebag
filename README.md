@@ -60,8 +60,8 @@ sudo chmod 755 /etc/init.d/dicebag-login
 | Command              | Description  |
 | -------------------- | ------------ |
 | help                 | Sends the user a private message listing all available commands. |
-| help <command name>  | Sends the user a private message with info about a specific command. |
-| roll <dice notation> | Performs the requested dice rolls, and returns the results. |
+| help *command*       | Sends the user a private message with info about a specific command. |
+| roll *dice-notation* | Performs the requested dice rolls, and returns the results. |
 
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
