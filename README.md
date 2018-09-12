@@ -1,8 +1,9 @@
 # dicebag
 
-Dicebag is a Discord bot for rolling dice using dice notation.
-
+Dicebag is a Discord bot for rolling dice using dice notation.  
 Please see the [GreenImp/rpg-dice-roller readme][3] for more information about supported notation.
+
+[Click here to invite Dicebag to your own Discord server!][4]
 
 ## Installation
 
@@ -66,3 +67,4 @@ sudo chmod 755 /etc/init.d/dicebag-login
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
 [3]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
+[4]: https://discordapp.com/api/oauth2/authorize?client_id=425049940788641802&permissions=67584&scope=bot
