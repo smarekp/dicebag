@@ -1,5 +1,4 @@
-config.json
 node_modules
-package-lock.json
-nohup.out
+config.json
 debug.log
+nohup.out
