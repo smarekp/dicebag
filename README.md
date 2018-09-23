@@ -70,8 +70,13 @@ sudo chmod 755 /etc/init.d/dicebag-login
 | timezone *timezone-name*                   | Configure your local timezone.                                       |
 | time *local-time*                          | Convert a local time to each of the server's configured timezones.   |
 
+## Attribution
+
+[The official Dicebag bot's avatar was created by Ahkâm (freeiconspng.com).][6]
+
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
 [3]: http://sqlitebrowser.org/
 [4]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
 [5]: https://discordapp.com/api/oauth2/authorize?client_id=425049940788641802&permissions=67584&scope=bot
+[6]: https://www.freeiconspng.com/img/34413
