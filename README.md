@@ -1,12 +1,9 @@
 # dicebag
 
 Dicebag is a Discord bot for rolling dice using dice notation, with few additional commands useful for role-playing groups.
-Please see the [GreenImp/rpg-dice-roller readme][3] for more information about supported notation.
+Please see the [GreenImp/rpg-dice-roller readme][4] for more information about supported notation.
 
-[Click here to invite Dicebag to your own Discord server!][5]
-
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://discordapp.com/api/oauth2/authorize?client_id=425049940788641802&permissions=67584&scope=bot" data-icon="octicon-smiley" data-size="large" aria-label="Click here to add Dicebag to your Discord server.">Add Dicebag To Your Discord Server</a>
+[Click here to add Dicebag to your Discord server!][5]
 
 ## Installation
 
@@ -32,7 +29,7 @@ Replace `your-token-goes-here` with your own Discord bot's token.
 ```
 Create an SQLite3 database file named *database.sqlite3*.  
 Use the *database.sql* file to create the two nessecary tables.  
-If you are unfamiliar with SQLite3, I highly recommend [DB Browser for SQLite][4].
+If you are unfamiliar with SQLite3, I highly recommend [DB Browser for SQLite][3].
 
 ### Login
 
@@ -75,7 +72,6 @@ sudo chmod 755 /etc/init.d/dicebag-login
 
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
-[3]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
-[4]: http://sqlitebrowser.org/
+[3]: http://sqlitebrowser.org/
+[4]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
 [5]: https://discordapp.com/api/oauth2/authorize?client_id=425049940788641802&permissions=67584&scope=bot
-
