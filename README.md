@@ -1,4 +1,4 @@
-# dicebag
+# Dicebag
 
 Dicebag is a Discord bot for rolling dice using dice notation, with few additional commands useful for role-playing groups.
 Please see the [GreenImp/rpg-dice-roller readme][4] for more information about supported notation.
