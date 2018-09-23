@@ -28,7 +28,7 @@ Replace `your-token-goes-here` with your own Discord bot's token.
 }
 ```
 Create an SQLite3 database file named *database.sqlite3*.  
-Use the *database.sql* file to create the two nessecary tables.
+Use the *database.sql* file to create the two nessecary tables.  
 If you are unfamiliar with SQLite3, I highly recommend [DB Browser for SQLite][5].
 
 ### Login
