@@ -2,9 +2,9 @@ const { prefix } = require('../config.json');
 
 module.exports = {
 	name: 'help',
-	description: 'List all of my commands or info about a specific command.',
+	description: 'List all available commands or info about a specific command.',
 	aliases: ['commands'],
-	usage: '[command name]',
+	usage: '[command-name]',
 	cooldown: 5,
 	execute(message, args) {
 		const { commands } = message.client;
@@ -12,8 +12,8 @@ module.exports = {
 
 		if (!args.length) {
 			data.push('Here\'s a list of all my commands:');
-			data.push(commands.map(command => command.name).join(', '));
-			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
+			data.push('`' + commands.map(command => command.name).join('`, `') + '`');
+			data.push(`\nYou can send \`${prefix}help [command-name]\` to get info on a specific command!`);
 		}
 		else {
 			if (!commands.has(args[0])) {
@@ -22,21 +22,22 @@ module.exports = {
 
 			const command = commands.get(args[0]);
 
-			data.push(`**Name:** ${command.name}`);
+			data.push(`**Name:**  ${command.name}`);
 
-			if (command.description) data.push(`**Description:** ${command.description}`);
-			if (command.aliases) data.push(`**Aliases:** ${command.aliases.join(', ')}`);
-			if (command.usage) data.push(`**Usage:** \`${prefix}${command.name} ${command.usage}\``);
+			if (command.aliases) data.push(`**Aliases:**  ${command.aliases.join(', ')}`);
+			if (command.usage) data.push(`**Usage:**  \`${prefix}${command.name} ${command.usage}\``);
 
-			data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
+			// data.push(`**Cooldown:**  ${command.cooldown || 3} second(s)`);
+
+			if (command.description) data.push(`\n${command.description}`);
 		}
 
 		message.author.send(data, { split: true })
 			.then(() => {
 				if (message.channel.type !== 'dm') {
-					message.channel.send('I\'ve sent you a DM with all my commands!');
+					message.channel.send('I\'ve sent you a private message with all my commands!');
 				}
 			})
-			.catch(() => message.reply('It seems like I can\'t DM you!'));
+			.catch(() => message.reply('It seems like I can\'t send you a private message!'));
 	},
 };

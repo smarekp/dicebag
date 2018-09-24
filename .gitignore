@@ -1,4 +1,8 @@
-node_modules
+deprecated/
+node_modules/
 config.json
+database
+database.sqlite
+database.sqlite3
 debug.log
 nohup.out
