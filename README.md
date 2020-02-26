@@ -52,7 +52,7 @@ nodejs logout.js
 In the *`/etc/init.d`* directory, create a file called *`dicebag-login`* containing the following:
 ```shell
 #!/bin/sh
-nohup nodejs /home/lobadmin/projects/dicebag/login.js 2>/dev/null &
+nohup nodejs ~/dicebag/login.js 2>/dev/null &
 ```
 Run the following command:
 ```shell
