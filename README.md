@@ -61,6 +61,12 @@ sudo chmod 755 /etc/init.d/dicebag-login
 
 ## Usage
 
+### Timezones
+
+Dicebag's timezone-related functions expect full timezone names (example: `America/New_York`). A list of timezone names can be found [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+### Commands
+
 | Command                                    | Description                                                          |
 | ------------------------------------------ | -------------------------------------------------------------------- |
 | help                                       | Sends the user a private message listing all available commands.     |
