@@ -67,6 +67,8 @@ Dicebag's timezone-related functions expect full timezone names (example: `Ameri
 
 ### Commands
 
+Be sure to include the prefix directly before the command (default: `$`).
+
 | Command                                    | Description                                                          |
 | ------------------------------------------ | -------------------------------------------------------------------- |
 | help                                       | Sends the user a private message listing all available commands.     |
