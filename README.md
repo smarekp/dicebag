@@ -61,6 +61,14 @@ sudo chmod 755 /etc/init.d/dicebag-login
 
 ## Usage
 
+### Timezones
+
+Dicebag's timezone-related functions expect full timezone names (example: `America/New_York`). A list of timezone names can be found [here][7].
+
+### Commands
+
+Be sure to include the prefix directly before the command (default: `$`).
+
 | Command                                    | Description                                                          |
 | ------------------------------------------ | -------------------------------------------------------------------- |
 | help                                       | Sends the user a private message listing all available commands.     |
@@ -80,3 +88,4 @@ sudo chmod 755 /etc/init.d/dicebag-login
 [4]: https://github.com/GreenImp/rpg-dice-roller/blob/master/readme.md#supported-notation
 [5]: https://discordapp.com/api/oauth2/authorize?client_id=425049940788641802&permissions=67584&scope=bot
 [6]: https://www.freeiconspng.com/img/34413
+[7]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
