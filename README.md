@@ -27,8 +27,8 @@ Replace `your-token-goes-here` with your own Discord bot's token.
   "token": "your-token-goes-here"
 }
 ```
-Create an SQLite3 database file named *database.sqlite3*.  
-Use the *database.sql* file to create the two nessecary tables.  
+Create an SQLite3 database file named *`database.sqlite3`*.  
+Use the *`database.sql`* file to create the two nessecary tables.  
 If you are unfamiliar with SQLite3, I highly recommend [DB Browser for SQLite][3].
 
 ### Login
@@ -36,7 +36,7 @@ If you are unfamiliar with SQLite3, I highly recommend [DB Browser for SQLite][3
 Open a terminal in the dicebag directory and run the following command.  
 Closing the terminal window or killing the process will cause the bot to stop running.
 ```shell
-nodejs login.js
+node login.js
 ```
 
 ### Logout
@@ -80,7 +80,7 @@ Be sure to include the prefix directly before the command (default: `$`).
 
 ## Attribution
 
-[The official Dicebag bot's avatar was created by Ahkâm (freeiconspng.com).][6]
+[The Dicebag bot's avatar was created by Ahkâm (freeiconspng.com).][6]
 
 [1]: https://nodejs.org/en/
 [2]: https://www.npmjs.com/
