@@ -4,6 +4,7 @@
   "description": "A Discord bot for rolling dice using dice notation.",
   "main": "login.js",
   "scripts": {
+    "login": "node login.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

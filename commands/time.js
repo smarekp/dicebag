@@ -4,10 +4,14 @@ const sqlite3 = require('sqlite3').verbose();
 const getReplyString = function(time, timezones, author) {
 	var format = 'h:mma z';
 	var separator = "\n";
-	var output = author + ' ' + time.format(format) + ' corresponds to...' + separator + time.utc().format(format)
-	timezones.forEach(function(timezone) {
-		output += separator + time.tz(timezone).format(format);
-	});
+	var output = author + ' ' + time.format(format) + ' corresponds to...' + separator + time.utc().format(format);
+	if (timezones.length == 0) {
+		output = 'No timezones to convert to.';
+	} else {
+		timezones.forEach(function(timezone) {
+			output += separator + time.tz(timezone).format(format);
+		});
+	}
 	return output;	
 }
 
@@ -36,16 +40,17 @@ module.exports = {
 					db.get("SELECT * FROM guilds WHERE guild_id LIKE $guild_id", { $guild_id: message.channel.guild.id }, function(err, guild) {
 						zones = guild ? guild.timezones.split(', ') : [];
 						reply = getReplyString(time, zones, message.author);
+						message.channel.send(reply).catch(console.error);
 					});
 				} else {
 					reply = getReplyString(time, [], message.author);
+					message.channel.send(reply).catch(console.error);
 				}
 			} else {
 				reply = `${message.author} a time must be formatted like \`h:mma\`.`;
+				message.channel.send(reply).catch(console.error);
 			}
-			message.channel.send(reply).catch(console.error);
 		}).close();
-
 		return;
 
 	},
