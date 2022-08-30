@@ -19,7 +19,7 @@
   "homepage": "https://github.com/smarekp/dicebag#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "moment-timezone": "^0.5.21",
+    "moment-timezone": "^0.5.35",
     "rpg-dice-roller": "^2.0.0",
     "sqlite3": "^4.0.2"
   }
